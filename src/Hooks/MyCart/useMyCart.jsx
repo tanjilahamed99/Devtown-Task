@@ -5,7 +5,7 @@ const useMyCart = () => {
 
     const axios = UseAxios()
 
-    const { data: myCart = [] } = useQuery({
+    const { data: myCart = [], refetch } = useQuery({
         queryKey: ['myCart'],
         queryFn: async () => {
             const res = await axios.get('/myCart')
@@ -13,7 +13,7 @@ const useMyCart = () => {
         }
     })
 
-    return [myCart]
+    return [myCart, refetch]
 };
 
 export default useMyCart;

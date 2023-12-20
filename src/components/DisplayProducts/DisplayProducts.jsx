@@ -3,6 +3,7 @@ import Rating from 'react-rating';
 import { FaRegStar, FaStar } from "react-icons/fa";
 import UseAxios from '../../Hooks/useAxios/UseAxios';
 import Swal from 'sweetalert2';
+import { Link } from 'react-router-dom';
 
 const DisplayProducts = ({ product }) => {
     const { name, brand, price, photo, rating, _id } = product
@@ -44,6 +45,9 @@ const DisplayProducts = ({ product }) => {
                 <p className='text-xl my-2'>Price : <span className='font-bold'>${price}</span></p>
                 <div className="card-actions ">
                     <button onClick={() => handleBuyMobile(_id)} className="btn btn-outline">Buy Now</button>
+                    <Link to={`/updateProduct/${_id}`}>
+                        <button className="btn btn-outline">Update</button>
+                    </Link>
                 </div>
             </div>
         </div>
