@@ -23,6 +23,16 @@ const Navbar = () => {
                 My Cart
             </NavLink>
         </li>
+        <li>
+            <NavLink
+                to="/addProduct"
+                className={({ isActive, isPending }) =>
+                    isPending ? "pending" : isActive ? "text-purple-500" : ""
+                }
+            >
+                Add Products
+            </NavLink>
+        </li>
     </>
 
     return (
