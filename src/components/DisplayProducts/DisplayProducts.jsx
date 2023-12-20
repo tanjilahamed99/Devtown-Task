@@ -1,9 +1,29 @@
 import PropTypes from 'prop-types';
+import Rating from 'react-rating';
+import { FaRegStar, FaStar } from "react-icons/fa";
 
 const DisplayProducts = ({ product }) => {
+    const { name, brand, price, photo, rating, type, desc } = product
     return (
-        <div>
-
+        <div className="card w-96 bg-base-100 shadow-xl mx-auto">
+            <figure><img className='w-[300px] h-[300px]' src={photo} alt="Shoes" /></figure>
+            <div className="card-body">
+                <div className='flex justify-between'>
+                    <h2 className="card-title text-xl text-semibold">{name}</h2>
+                    <Rating
+                        className='text-yellow-500 text-xl'
+                        placeholderRating={rating}
+                        emptySymbol={<FaRegStar></FaRegStar>}
+                        placeholderSymbol={<FaStar ></FaStar >}
+                        fullSymbol={<FaStar ></FaStar >}
+                    />
+                </div>
+                    <p className='text-lg font-medium'> Brand: {brand}</p>
+                <p className='text-xl my-2'>Price : <span className='font-bold'>${price}</span></p>
+                <div className="card-actions ">
+                    <button className="btn btn-outline">Buy Now</button>
+                </div>
+            </div>
         </div>
     );
 };
