@@ -15,11 +15,9 @@ const AddProducts = () => {
         const rating = form.rating.value
 
         const newProductsData = { name, photo, brand, type, price, rating }
-        console.log(newProductsData)
 
         axios.post(`/product`, newProductsData)
             .then(res => {
-                console.log(res.data)
                 if (res.data.acknowledged) {
                     Swal.fire({
                         icon: "success",
@@ -27,6 +25,7 @@ const AddProducts = () => {
                         showConfirmButton: false,
                         timer: 1500
                     })
+                    form.reset()
                 }
             })
 

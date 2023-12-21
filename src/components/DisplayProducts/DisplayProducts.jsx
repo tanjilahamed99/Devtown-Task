@@ -28,7 +28,7 @@ const DisplayProducts = ({ product }) => {
 
 
     return (
-        <div className="card w-96 bg-base-100 shadow-xl mx-auto">
+        <div className="card w-96 bg-base-100 shadow-xl mx-auto rounded-br-[80px]">
             <figure><img className='w-[300px] h-[300px]' src={photo} alt="Shoes" /></figure>
             <div className="card-body">
                 <div className='flex justify-between'>
