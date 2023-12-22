@@ -5,7 +5,10 @@
  - user filter products by price 
  - user search products by brand 
 
- ## website live link : https://my-store-c4318.web.app/
+ ## website live link : https://my-store-c4318.web.app
+
+ ## client repo link : https://github.com/tanjilahamed99/Devtown-Task-client     
+ ## server repo link : https://github.com/tanjilahamed99/Devtown-task-server
  
  
  ## utilities  
