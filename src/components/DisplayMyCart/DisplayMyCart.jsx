@@ -43,9 +43,9 @@ const DisplayMyCart = ({ products }) => {
 
     return (
         <div className="card w-[90%] bg-base-100 shadow-xl mx-auto">
-            <figure><img className='w-[300px] h-[300px]' src={photo} alt="Shoes" /></figure>
+           <img className='w-[300px] h-[300px]' src={photo} alt="Shoes" />
             <div className="card-body">
-                <div className='flex justify-between'>
+                <div className='flex xl:flex-row flex-col gap-3 justify-between'>
                     <h2 className="card-title text-xl text-semibold">{name}</h2>
                     <Rating
                         className='text-yellow-500 text-xl'

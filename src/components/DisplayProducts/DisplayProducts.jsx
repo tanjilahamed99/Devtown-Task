@@ -28,10 +28,10 @@ const DisplayProducts = ({ product }) => {
 
 
     return (
-        <div className="card w-96 bg-base-100 shadow-xl mx-auto rounded-br-[80px]">
-            <figure><img className='w-[300px] h-[300px]' src={photo} alt="Shoes" /></figure>
+        <div className="card  bg-base-100 w-full shadow-xl mx-auto rounded-br-[80px]">
+            <figure><img className=' w-[250px] h-[250px] lg:w-[300px] lg:h-[300px]' src={photo} alt="Shoes" /></figure>
             <div className="card-body">
-                <div className='flex justify-between'>
+                <div className='flex flex-col gap-2 xl:flex-row  justify-between'>
                     <h2 className="card-title text-xl text-semibold">{name}</h2>
                     <Rating
                         className='text-yellow-500 text-xl'

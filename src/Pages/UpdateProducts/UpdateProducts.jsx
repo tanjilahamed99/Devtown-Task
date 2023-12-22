@@ -51,32 +51,32 @@ const UpdateProducts = () => {
                 <h2 className="text-xm font-bold">--Update--</h2>
                 <h2 className="text-3xl font-semibold">Update Product</h2>
             </div>
-            <form onSubmit={handleUpdate} className="grid grid-cols-1 w-full md:w-1/2 mx-auto lg:w-[40%] items-center justify-center gap-10 md:grid-cols-2 ">
-                <div className="mx-auto w-full">
+            <form onSubmit={handleUpdate} className="grid grid-cols-1 w-full md:w-[70%] mx-auto lg:w-[50%] items-center justify-center gap-10 md:grid-cols-2 ">
+                <div className="mx-auto md:col-span-1 col-span-2 w-[90%] md:w-full">
                     <h2 className="text-sm font-bold mb-2">Products Name</h2>
                     <input name="name" defaultValue={product?.name} type="text" placeholder="Type here" className="input input-bordered w-full " />
                 </div>
-                <div className="mx-auto w-full">
+                <div className="mx-auto md:col-span-1 col-span-2 w-[90%] md:w-full">
                     <h2 className="text-sm font-bold mb-2">Products Image</h2>
                     <input name="photo" defaultValue={product.photo} type="text" placeholder="Type here" className="input input-bordered w-full " />
                 </div>
-                <div className="mx-auto w-full">
+                <div className="mx-auto md:col-span-1 col-span-2 w-[90%] md:w-full">
                     <h2 className="text-sm font-bold mb-2">Products Brand</h2>
                     <input name="brand" defaultValue={product.brand} type="text" placeholder="Type here" className="input input-bordered w-full " />
                 </div>
-                <div className="mx-auto w-full">
+                <div className="mx-auto md:col-span-1 col-span-2 w-[90%] md:w-full">
                     <h2 className="text-sm font-bold mb-2">Products Type</h2>
                     <input name="type" type="text" defaultValue={product.type} placeholder="Type here" className="input input-bordered w-full " />
                 </div>
-                <div className="mx-auto w-full">
+                <div className="mx-auto md:col-span-1 col-span-2 w-[90%] md:w-full">
                     <h2 className="text-sm font-bold mb-2">Products Price</h2>
                     <input name="price" defaultValue={product.price} type="number" placeholder="Type here" className="input input-bordered w-full " />
                 </div>
-                <div className="mx-auto w-full">
+                <div className="mx-auto md:col-span-1 col-span-2 w-[90%] md:w-full">
                     <h2 className="text-sm font-bold mb-2">Products Rating</h2>
                     <input name="rating" defaultValue={product.rating} type="number" placeholder="Type here" className="input input-bordered w-full " />
                 </div>
-                <button className="btn btn-outline col-span-2">Update</button>
+                <button className="btn btn-outline col-span-2 w-full mx-auto">Update</button>
             </form>
         </div>
     );
